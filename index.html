@@ -56,7 +56,7 @@
 
             .dv-header
             {
-                width: 10%;
+                width: 18%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -69,7 +69,7 @@
 
             .itxt-container
             {
-                width: 65%;
+                width: 80%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -79,6 +79,34 @@
                 width: 100%;
                 height: 100%;
                 background-color: aquamarine;
+                position: fixed;
+                display: grid;
+                grid-template-areas: "left right";
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .left-panel
+            {
+                grid-area: left;
+                background-color: blueviolet;
+                width: 100%;
+                height: 100%;
+            }
+
+            .right-panel
+            {
+                grid-area: right;
+                background-color: navajowhite;
+                width: 100%;
+                height: 100%;
+            }
+
+            #why-dataverse-intro
+            {
+                top: 50%;
+                display: block;
+                position: relative;
+                transform: translateY(-50%)
             }
 
         </style>
@@ -86,19 +114,36 @@
     <body>
 
         <div class="halfhalf">
-            
-        </div>
 
-        <div class="dv-header">
-            <img src="./assets/dataverse.svg" style="width: 100%; object-fit: contain;">
+            <!--Left panel-->
+            <div class="left-panel">
+
+                <div id="why-dataverse-intro">
+                    <div class="dv-header">
+                        <img src="./assets/dataverse.svg" style="width: 100%; object-fit: contain;">
+                    </div>
+                    
+                            
+                    <h1 style="text-align: center; font-size: 50px; margin-top: 0px; margin-bottom: 10px;">Why Dataverse?</h1>
+                    <div class="itxt-container">
+                        <p class="itxt"><b>Dataverse</b> is Microsoft's low-code/no-code highly performant data service that allows you to deliver services with agility while increasing scale and efficiency.</p>
+                        <p class="itxt">But why should you consider using it over other Microsoft tools you're familiar with like <i>Sharepoint</i>, <i>Access</i>, and <i>SQL</i>?</p>
+                        <p class="itxt">Explore reasons on the right!</p>
+                    </div>
+                </div>
+        
+                
+                
+            </div>
+
+            <!--Right panel-->
+            <div class="right-panel">
+                
+            </div>
+
         </div>
 
         
-        <h1 style="text-align: center; font-size: 50px; margin-top: 0px; margin-bottom: 10px;">Why Dataverse?</h1>
-        <div class="itxt-container">
-            <p class="itxt"><b>Dataverse</b> is Microsoft's low-code/no-code highly performant data service that allows you to deliver services with agility while increasing scale and efficiency.</p>
-            <p class="itxt">But why should you consider using it over other Microsoft tools you're familiar with like <i>Sharepoint</i>, <i>Access</i>, and <i>SQL</i>?</p>
-        </div>
     
         
 

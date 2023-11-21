@@ -31,6 +31,18 @@
 - https://www.youtube.com/watch?v=aXO3-bhQje0
 
 
+<div class="dv-header">
+    <img src="./assets/dataverse.svg" style="width: 100%; object-fit: contain;">
+</div>
+
+        
+<h1 style="text-align: center; font-size: 50px; margin-top: 0px; margin-bottom: 10px;">Why Dataverse?</h1>
+<div class="itxt-container">
+    <p class="itxt"><b>Dataverse</b> is Microsoft's low-code/no-code highly performant data service that allows you to deliver services with agility while increasing scale and efficiency.</p>
+    <p class="itxt">But why should you consider using it over other Microsoft tools you're familiar with like <i>Sharepoint</i>, <i>Access</i>, and <i>SQL</i>?</p>
+</div>
+
+
 <div class="topic">
     <div class="topic-cover">
         <div class="icon-container">
