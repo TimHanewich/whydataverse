@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
         <style>
 
             body
@@ -22,6 +26,7 @@
                 border-style: solid;
                 border-radius: 10px;
                 background-color: azure;
+                cursor: pointer;
             }
 
             .topic-cover
@@ -466,6 +471,27 @@
         
     
         
+
+
+        <script>
+
+            $(document).ready(function() 
+            {
+                $(".topic").mouseover(function() 
+                {
+                    $(this).css("background-color", "#FDFFA5");
+                    console.log("HERE");
+                });
+
+                $(".topic").mouseout(function() 
+                {
+                    $(this).css("background-color", "azure");
+                    console.log("HERE");
+                });
+
+            })
+
+        </script>
 
     </body>
 </html>
