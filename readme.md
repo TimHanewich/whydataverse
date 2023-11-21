@@ -10,20 +10,22 @@
     - Common data model
     - business rules + data validation
     - business process flows
+    - Calculated/Rollup fields ("formula fields")
 - Integrations
     - Access to Microsoft business-driven tools: Model-Driven Apps, Power Pages, etc.
     - Syncs with Azure AD
     - Dataflows make in and out easy
     - Integration with Azure Synapse for analytics
+    - AI
 - No more headaches
     - Performance
     - Auditing
     - Robust API
-    - Calculated/Rollup fields ("formula fields")
 - Promote healthy development
-    - Governance
-    - Solutions/ALM
-    - Best for using with AI
+    - Visibility into what is going on ("transparency")
+    - Governance & Control
+    - ALM with Solutions
+    - Accessibility
 
 
 

@@ -14,16 +14,19 @@
             {
                 width: 225px;
                 height: 150px;
-                background-color: gold;
                 border-radius: 15px;
                 display: inline-block;
                 margin: 2px;
+                border-radius: 2px;
+                border: black;
+                border-style: solid;
+                border-radius: 10px;
+                background-color: azure;
             }
 
             .topic-cover
             {
                 width: 100%;
-                background-color: blue;
                 display: block;
                 position: relative;
                 top: 50%;
@@ -36,7 +39,6 @@
                 height: 50px;
                 margin-left: auto;
                 margin-right: auto;
-                background-color: blueviolet;
             }
 
             img
@@ -53,7 +55,6 @@
                 margin-bottom: 0px;
                 font-size: 24px;
                 height: 60px;
-                background-color: yellowgreen;
                 overflow: hidden;
                 max-width: 80%;
                 margin: 0 auto;
@@ -83,17 +84,15 @@
             {
                 width: 100%;
                 height: 100%;
-                background-color: aquamarine;
                 position: fixed;
                 display: grid;
                 grid-template-areas: "left right";
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 2fr 3fr;
             }
 
             .left-panel
             {
                 grid-area: left;
-                background-color: blueviolet;
                 width: 100%;
                 height: 100%;
             }
@@ -101,9 +100,9 @@
             .right-panel
             {
                 grid-area: right;
-                background-color: navajowhite;
                 width: 100%;
                 height: 100%;
+                overflow: auto;
             }
 
             #why-dataverse-intro
@@ -117,7 +116,6 @@
             .topic-category
             {
                 width: 95%;
-                background-color: cyan;
                 border-radius: 15px;
                 margin-right: auto;
                 margin-left: auto;
@@ -178,7 +176,7 @@
             <div class="right-panel">
 
                 <!--SECURITY-->
-                <div class="topic-category">
+                <div class="topic-category" style="background-color: #d8f3dc;">
                     <h3 class="topic-category-title">SECURITY</h3>
 
                     <div class="topics">
@@ -218,8 +216,8 @@
                 </div>
 
                 <!--RELATIONAL DB FOR BUSINESS-->
-                <div class="topic-category">
-                    <h3 class="topic-category-title">RELATIONAL DATABASE BUILT FOR BUSINESS</h3>
+                <div class="topic-category" style="background-color: #b7e4c7;">
+                    <h3 class="topic-category-title">BUILT FOR BUSINESS NEEDS</h3>
 
                     <div class="topics">
 
@@ -286,6 +284,168 @@
 
                     </div>
                 </div>
+
+
+
+                <!--SUITE OF INTEGRATIONS-->
+                <div class="topic-category" style="background-color: #b7e4c7;">
+                    <h3 class="topic-category-title">INTEGRATIONS</h3>
+
+                    <div class="topics">
+
+                        <!--Power Platform-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="./assets/pp.svg">
+                                </div>
+                                <h2 class="topic-title">Power Platform</h2>
+                            </div>
+                        </div>
+    
+                        <!--Data flows-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/Tnyjz8h.png">
+                                </div>
+                                <h2 class="topic-title">Data Flows</h2>
+                            </div>
+                        </div>
+    
+                        <!--Integration with Azure Synapse-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/DM08QWQ.png">
+                                </div>
+                                <h2 class="topic-title">Azure Synapse</h2>
+                            </div>
+                        </div>
+
+                        <!--AI Builder-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="./assets/ai_builder.svg">
+                                </div>
+                                <h2 class="topic-title">AI Builder</h2>
+                            </div>
+                        </div>
+                    
+                        <!--Entra ID-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/ZlINaY9.png">
+                                </div>
+                                <h2 class="topic-title">Entra ID</h2>
+                            </div>
+                        </div>
+    
+                        
+
+
+                    </div>
+                </div>
+
+
+                <!--Freedom from middle layer-->
+                <div class="topic-category" style="background-color: #b7e4c7;">
+                    <h3 class="topic-category-title">FREEDOM FROM MANAGEMENT AND OPTIMIZATION</h3>
+
+                    <div class="topics">
+
+                        <!--Performance-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/L9o0T65.png">
+                                </div>
+                                <h2 class="topic-title">Performance</h2>
+                            </div>
+                        </div>
+    
+                        <!--Auditing-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/JKQwNhP.png">
+                                </div>
+                                <h2 class="topic-title">Auditing</h2>
+                            </div>
+                        </div>
+
+    
+                        <!--Robust API-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/qO38sTO.png">
+                                </div>
+                                <h2 class="topic-title">Robust API</h2>
+                            </div>
+                        </div>                 
+                        
+
+
+                    </div>
+                </div>
+
+
+                <!--Freedom from middle layer-->
+                <div class="topic-category" style="background-color: #b7e4c7;">
+                    <h3 class="topic-category-title">PROMOTE HEALTHY DEVELOPMENT</h3>
+
+                    <div class="topics">
+
+                        <!--Visibility-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/rE7VIK2.png">
+                                </div>
+                                <h2 class="topic-title">Transparency</h2>
+                            </div>
+                        </div>
+
+                        <!--Governance-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/clP8rDm.png">
+                                </div>
+                                <h2 class="topic-title">Governance</h2>
+                            </div>
+                        </div>
+
+                        <!--ALM-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/xO9jsA2.png">
+                                </div>
+                                <h2 class="topic-title">ALM</h2>
+                            </div>
+                        </div>
+
+                        <!--Accessibility-->
+                        <div class="topic">
+                            <div class="topic-cover">
+                                <div class="icon-container">
+                                    <img src="https://i.imgur.com/ciqflmC.png">
+                                </div>
+                                <h2 class="topic-title">Accessibility</h2>
+                            </div>
+                        </div>
+             
+                        
+
+
+                    </div>
+                </div>
+
+
                 
             </div>
 
