@@ -220,6 +220,24 @@
                         <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHYzb3FrMW1lN3FsY3U5NnZrOGVxeWY5NGNvajNwenV0Zzhhcmt1cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J9nTqIlCl59OsizXVY/giphy.gif">
                     </div>
                 </div>
+
+                <!--Granular Control-->
+                <div id="gc-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/lsiBeu0.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Granular Access Control</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse empowers robust data governance by providing multifaceted security controls, enabling granular control over data access and management within the Microsoft Power Platform ecosystem.</p>
+                        <p class="info-txt"><b>Field-Level Security</b>: With field-level security, administrators can restrict access to specific fields within tables/entities. This feature allows organizations to hide sensitive information from certain users or user roles. By customizing field-level permissions, sensitive data, such as financial details or personally identifiable information, remains concealed from unauthorized individuals..</p>
+                        <p class="info-txt"><b>Record-Level Security</b>: Dataverse offers record-level security, permitting administrators to define rules dictating which records users can view or edit. By setting up access privileges at the record level based on criteria like ownership, teams, or hierarchical relationships, organizations can ensure that users only interact with the records pertinent to their roles.</p>
+                        <p class="info-txt"><b>Environment Security</b>: Dataverse emphasizes environment security, providing controls at the environment level to manage user access, data integration, and app development. Administrators can configure permissions to control who can access specific environments, ensuring data isolation and compliance across different projects or departments.</p>
+                        <p class="info-txt"><b>Control Over App Building</b>: Additionally, Dataverse enables administrators to control who can build apps and make modifications. By assigning roles with appropriate privileges for app creation, modification, or customization, organizations maintain oversight and governance over the development process, ensuring adherence to standards and preventing unauthorized alterations.</p>
+                    </div>
+                    <div class="info-media">
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExajkyZmQxMXlqZTBveDlucGtvYmZ4dGM0eThxM3Vmb3JqY3FuN3p0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JcKjyW82Gg8Dx5VmJI/giphy.gif">
+                    </div>
+                </div>
         
                 
                 
@@ -245,7 +263,7 @@
                         </div>
     
                         <!--Granular Control (field-level, record-level, etc.)-->
-                        <div class="topic">
+                        <div id="gc" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/lsiBeu0.png">
@@ -554,6 +572,10 @@
                         if (TileID == "rbsm")
                         {
                             $("#rbsm-info").css("display", "");
+                        }
+                        else if (TileID == "gc")
+                        {
+                            $("#gc-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
