@@ -65,20 +65,20 @@
                 margin: 0 auto;
             }
 
-            .dv-header
+            .img-header
             {
-                width: 18%;
+                width: 20%;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .itxt
+            .intro-txt
             {
                 text-align: center;
                 font-size: 25px;
             }
 
-            .itxt-container
+            .intro-txt-container
             {
                 width: 80%;
                 margin-left: auto;
@@ -100,6 +100,7 @@
                 grid-area: left;
                 width: 100%;
                 height: 100%;
+                overflow: auto;
             }
 
             .right-panel
@@ -110,7 +111,7 @@
                 overflow: auto;
             }
 
-            #why-dataverse-intro
+            .info-pane
             {
                 top: 50%;
                 display: block;
@@ -152,6 +153,35 @@
                 justify-content: center;
             }
 
+            .info-pane-title
+            {
+                text-align: center;
+                margin-top: 0px;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .info-txt-container
+            {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .info-txt
+            {
+                font-size: 18px;
+                text-align: left;
+                margin-top: 0px;
+            }
+
+            .info-media
+            {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
         </style>
     </head>
     <body>
@@ -162,17 +192,31 @@
             <div class="left-panel">
 
                 <!--Why dataverse intro-->
-                <div id="why-dataverse-intro">
-                    <div class="dv-header">
+                <div id="why-dataverse-intro" class="info-pane" style="display: none;">
+                    <div class="img-header">
                         <img src="./assets/dataverse.svg" style="width: 100%; object-fit: contain;">
                     </div>
                     
                             
                     <h1 style="text-align: center; font-size: 50px; margin-top: 0px; margin-bottom: 10px;">Why Dataverse?</h1>
-                    <div class="itxt-container">
-                        <p class="itxt"><b>Dataverse</b> is Microsoft's low-code/no-code highly performant data service that allows you to deliver services with agility while increasing scale and efficiency.</p>
-                        <p class="itxt">But why should you consider using it over other Microsoft tools you're familiar with like <i>Sharepoint</i>, <i>Access</i>, and <i>SQL</i>?</p>
-                        <p class="itxt">Explore reasons on the right!</p>
+                    <div class="intro-txt-container">
+                        <p class="intro-txt"><b>Dataverse</b> is Microsoft's low-code/no-code highly performant data service that allows you to deliver services with agility while increasing scale and efficiency.</p>
+                        <p class="intro-txt">But why should you consider using it over other Microsoft tools you're familiar with like <i>Sharepoint</i>, <i>Access</i>, and <i>SQL</i>?</p>
+                        <p class="intro-txt">Explore reasons on the right!</p>
+                    </div>
+                </div>
+
+                <div id="rbsm" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/9iIfiWv.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Role-Based Security Model</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Role-based security in Dataverse, part of the Microsoft Power Platform, delivers precise control over data access by assigning specific permissions to user roles. This feature enables administrators to regulate access levels, protecting sensitive information and ensuring that users have access only to the necessary data and functionality aligned with their roles. It streamlines administration by centralizing permission management and supports scalability, allowing easy adjustments to roles and permissions as organizational needs evolve.</p>
+                        <p class="info-txt">Furthermore, role-based security facilitates compliance with audit trails and monitoring while enhancing user experience by providing a clear view of authorized resources, thus optimizing data protection and user efficiency within the platform.</p>
+                    </div>
+                    <div class="info-media">
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHYzb3FrMW1lN3FsY3U5NnZrOGVxeWY5NGNvajNwenV0Zzhhcmt1cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J9nTqIlCl59OsizXVY/giphy.gif">
                     </div>
                 </div>
         
