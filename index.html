@@ -290,6 +290,18 @@
                         <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXRmdml2ZHRpaHhlZDl3bWYwNHlyenhkbmJ0czBzODc2emd4MWZ1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MvB8txGH3uEqzEs2Z0/giphy.gif">
                     </div>
                 </div>
+
+                <!--Rich Metadata-->
+                <div id="rm-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/xXMTLkj.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Rich Metadata</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse's robust metadata capabilities, including standard attributes like "Created By," "Created On," "Modified By," and "Modified On," alongside customizable metadata and table hierarchies, play a crucial role in optimizing business processes. These attributes provide essential insights into data accountability and change history, ensuring compliance and integrity within workflows.</p>
+                        <p class="info-txt">The comprehensive metadata framework extends beyond standard fields, enabling the creation of custom attributes and defining table structures and hierarchies. This flexibility empowers tailored data categorization, fostering efficient data modeling and analysis aligned with specific business needs. Dataverse's rich metadata not only facilitates meticulous data governance but also enhances data visibility, classification, and relational structures, making it an ideal enterprise database for diverse business workloads.</p>
+                    </div>
+                </div>
         
                 
                 
@@ -364,7 +376,7 @@
                         </div>
     
                         <!--Rich Metadata-->
-                        <div class="topic">
+                        <div id="rm" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/xXMTLkj.png">
@@ -640,6 +652,10 @@
                         else if (TileID == "ud")
                         {
                             $("#ud-info").css("display", "");
+                        }
+                        else if (TileID == "rm")
+                        {
+                            $("#rm-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
