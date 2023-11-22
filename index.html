@@ -274,6 +274,22 @@
                         <img src="https://media0.giphy.com/media/cQVxZf5yXBOQBKAkuT/giphy.gif">
                     </div>
                 </div>
+
+                <!--Unstructured Data-->
+                <div id="ud-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/7GaW8Qd.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Unstructured Data</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse offers remarkable versatility by seamlessly integrating the storage of unstructured Binary Large Object (BLOB) data, such as files and images, directly within its structured relational database framework. This unique capability allows users to manage both structured and unstructured data effortlessly, providing a holistic storage solution within a single platform.</p>
+                        <p class="info-txt">Through its "File" and "Image" data types, Dataverse enables the storage of BLOB data alongside structured data at the column level within tables (entities). This integration empowers users to associate files, images, or other binary data directly with related records, offering a unified data management approach without the need for external storage solutions.</p>
+                        <p class="info-txt">The ability to store BLOB data within Dataverse seamlessly streamlines workflows, enabling users to access and manage both structured and unstructured data within a unified environment. This functionality not only enhances data organization but also facilitates comprehensive data analysis, making Dataverse a versatile and efficient solution for businesses seeking an integrated platform to manage diverse data types effortlessly.</p>
+                    </div>
+                    <div class="info-media">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXRmdml2ZHRpaHhlZDl3bWYwNHlyenhkbmJ0czBzODc2emd4MWZ1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MvB8txGH3uEqzEs2Z0/giphy.gif">
+                    </div>
+                </div>
         
                 
                 
@@ -338,7 +354,7 @@
                         </div>
     
                         <!--BLOB data-->
-                        <div class="topic">
+                        <div id="ud" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/7GaW8Qd.png">
@@ -620,6 +636,10 @@
                         else if (TileID == "rtd")
                         {
                             $("#rtd-info").css("display", "");
+                        }
+                        else if (TileID == "ud")
+                        {
+                            $("#ud-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
