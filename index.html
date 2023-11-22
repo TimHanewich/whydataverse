@@ -545,7 +545,6 @@
                 {
                     $(this).click(function()
                     {
-                        //$('.topic').css('display', 'none'); //HIDE EVERY INFO PANE!
                         var TileID = $(this).attr("id"); //We can get the ID and handle which pane to show based on that.
                         
                         //Hide all
@@ -555,6 +554,10 @@
                         if (TileID == "rbsm")
                         {
                             $("#rbsm-info").css("display", "");
+                        }
+                        else //If we haven't handled this specific topic yet, just show the welcome intro.
+                        {
+                            $("#why-dataverse-intro").css("display", ""); //Show Why Dataverse intro
                         }
                     });
                 });
