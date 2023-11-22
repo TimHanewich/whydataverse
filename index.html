@@ -242,6 +242,22 @@
                         <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExajkyZmQxMXlqZTBveDlucGtvYmZ4dGM0eThxM3Vmb3JqY3FuN3p0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JcKjyW82Gg8Dx5VmJI/giphy.gif">
                     </div>
                 </div>
+
+                <!--Behind Entra ID-->
+                <div id="beid-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/ZlINaY9.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Secured Behind Azure Entra ID</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Securing Dataverse behind Azure Active Directory (Entra ID) enhances its overall security by leveraging robust authentication and access control mechanisms. By integrating with Entra ID, Dataverse inherits the advanced security features provided by Azure's identity management services.</p>
+                        <p class="info-txt">Entra ID enables centralized management of user identities and access policies, offering multi-factor authentication, single sign-on (SSO), role-based access control (RBAC), and conditional access capabilities. These features bolster Dataverse's security posture by ensuring that only authenticated and authorized users, devices, or applications can access the data stored within Dataverse environments.</p>
+                        <p class="info-txt">Moreover, Entra ID's continuous monitoring, threat detection, and identity protection functionalities add layers of security to Dataverse, detecting and mitigating potential risks in real-time. This integration not only fortifies data protection but also aligns with industry standards and compliance requirements, making Dataverse a highly secure and compliant platform for managing and safeguarding critical business data.</p>    
+                    </div>
+                    <div class="info-media">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3N5NXM3bWFnbzFiczBxbmx2b2ZmaHo1MGN3YmNjbnlqdzZka3k3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qOFUOeW6BzM8sBKULq/giphy.gif">
+                    </div>
+                </div>
         
                 
                 
@@ -277,7 +293,7 @@
                         </div>
 
                         <!--All behind Azure AD-->
-                        <div class="topic">
+                        <div id="beid" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/ZlINaY9.png">
@@ -580,6 +596,10 @@
                         else if (TileID == "gc")
                         {
                             $("#gc-info").css("display", "");
+                        }
+                        else if (TileID == "beid")
+                        {
+                            $("#beid-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
