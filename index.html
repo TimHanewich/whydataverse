@@ -206,7 +206,8 @@
                     </div>
                 </div>
 
-                <div id="rbsm" class="info-pane">
+                <!--Role based security model-->
+                <div id="rbsm-info" class="info-pane">
                     <div class="img-header">
                         <img src="https://i.imgur.com/9iIfiWv.png" style="height: 100%; width: 100%;">
                     </div>
@@ -234,7 +235,7 @@
                     <div class="topics">
 
                         <!--Role-based security-->
-                        <div id="rbs" class="topic">
+                        <div id="rbsm" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/9iIfiWv.png">
@@ -521,23 +522,40 @@
 
             $(document).ready(function() 
             {
+
+                //Show welcome info & hide all other panes
+                $(".info-pane").css("display", "none"); //Hide all panes
+                $("#why-dataverse-intro").css("display", ""); //Show why dataverse intro
+
+
+                //Highlight on mouse over
                 $(".topic").mouseover(function() 
                 {
                     $(this).css("background-color", "#FDFFA5");
                 });
 
+                //Unhighlight once mouse leaves
                 $(".topic").mouseout(function() 
                 {
                     $(this).css("background-color", "azure");
                 });
 
+                //Handle showing info pane
                 $(".topic").each(function()
                 {
                     $(this).click(function()
                     {
                         //$('.topic').css('display', 'none'); //HIDE EVERY INFO PANE!
                         var TileID = $(this).attr("id"); //We can get the ID and handle which pane to show based on that.
-                        console.log(TileID);
+                        
+                        //Hide all
+                        $(".info-pane").css("display", "none");
+
+                        //Show the correct one based on the ID
+                        if (TileID == "rbsm")
+                        {
+                            $("#rbsm-info").css("display", "");
+                        }
                     });
                 });
 
