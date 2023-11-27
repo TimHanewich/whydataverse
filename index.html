@@ -314,6 +314,20 @@
                         <p class="info-txt">The advantages are: enhanced data quality, reduced complexities in integration efforts, increased agility in adapting to evolving business needs, and empowering organizations to derive meaningful insights from their data with ease. The common data model within Dataverse not only unlocks the potential for innovation but also establishes a robust foundation for scalable, future-proof data ecosystems.</p>
                     </div>
                 </div>
+
+                <!--Business Rules-->
+                <div id="br-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/uwBgWIA.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Business Rules</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">The capacity to incorporate business rules within Dataverse is a game-changer, empowering organizations to enforce logic and regulations seamlessly within their data workflows. By embedding these rules directly into the platform, users gain dynamic control and automation, ensuring data integrity and compliance while streamlining operations.</p>
+                        <p class="info-txt">For instance, imagine a sales organization utilizing Dataverse. They can implement business rules dictating that any new sales entry must contain mandatory fields such as customer name, product type, and sales representative ID. Additionally, a rule could be set to automatically calculate discounts based on predefined criteria or restrict sales beyond certain thresholds without managerial approval.</p>
+                        <p class="info-txt">Moreover, in a healthcare setting, Dataverse's business rules can enforce regulatory compliance. For instance, ensuring that patient records contain mandatory fields such as name, date of birth, and specific medical history information. It can also set protocols to flag potential drug interactions or alert medical staff if a patient's vital signs exceed predefined safety limits.</p>
+                        <p class="info-txt">By integrating these business rules directly into Dataverse, organizations can maintain data consistency, enforce regulatory compliance, and automate decision-making processes, ultimately enhancing operational efficiency and ensuring data reliability across various business domains.</p>
+                    </div>
+                </div>
         
                 
                 
@@ -408,7 +422,7 @@
                         </div>
     
                         <!--Business rules + data validation-->
-                        <div class="topic">
+                        <div id="br" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/uwBgWIA.png">
@@ -672,6 +686,10 @@
                         else if (TileID == "cdm")
                         {
                             $("#cdm-info").css("display", "");
+                        }
+                        else if (TileID == "br")
+                        {
+                            $("#br-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
