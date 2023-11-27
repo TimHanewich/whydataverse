@@ -381,6 +381,19 @@
                         <p class="info-txt">The integration allows for the creation of comprehensive data pipelines, enabling the transformation and movement of data between Dataverse and Azure Synapse seamlessly. This collaborative environment streamlines data management, ensures data consistency, and provides a unified platform for both transactional and analytical workloads, fostering a more holistic approach to data-driven strategies within organizations. Ultimately, this synergy between Dataverse and Azure Synapse empowers businesses to unlock the full potential of their data, driving innovation, optimizing operations, and gaining a competitive edge in today's data-driven landscape.</p>
                     </div>
                 </div>
+
+                <!--AI Builder-->
+                <div id="ai-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="./assets/ai_builder.svg" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Embed AI with AI Builder</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Integration with the Power Platform's AI suite, AI Builder, allows businesses to leverage state-of-the-art AI algorithms and machine learning models to extract invaluable intelligence from the wealth of data stored within Dataverse.</p>
+                        <p class="info-txt">By harnessing AI against Dataverse data, organizations can uncover intricate patterns, predict trends, and derive actionable insights that were previously inaccessible. These AI models can perform complex analyses, such as sentiment analysis, predictive maintenance, customer behavior forecasting, or personalized recommendations, unlocking new avenues for innovation and efficiency across diverse industries.</p>
+                        <p class="info-txt">The integration enables the automation of repetitive tasks and the augmentation of decision-making processes. AI models can automate workflows, streamline operations, and even assist in the identification of anomalies or opportunities within the data, enhancing overall efficiency and enabling proactive strategies.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -536,7 +549,7 @@
                         </div>
 
                         <!--AI Builder-->
-                        <div class="topic">
+                        <div id="ai" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="./assets/ai_builder.svg">
@@ -758,6 +771,10 @@
                         else if (TileID == "as")
                         {
                             $("#as-info").css("display", "");
+                        }
+                        else if (TileID == "ai")
+                        {
+                            $("#ai-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
