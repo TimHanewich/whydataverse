@@ -357,6 +357,17 @@
                     </div>
                 </div>
         
+                <!--Integrate with Data Flows-->
+                <div id="df-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/Tnyjz8h.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Easy ETL with Dataflows</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataflows are a self-service, cloud-based, data preparation technology. Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account.</p>
+                        <p class="info-txt">Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -492,7 +503,7 @@
                         </div>
     
                         <!--Data flows-->
-                        <div class="topic">
+                        <div id="df" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/Tnyjz8h.png">
@@ -726,6 +737,10 @@
                         else if (TileID == "pp")
                         {
                             $("#pp-info").css("display", "");
+                        }
+                        else if (TileID == "df")
+                        {
+                            $("#df-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
