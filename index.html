@@ -368,6 +368,19 @@
                         <p class="info-txt">Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date.</p>
                     </div>
                 </div>
+
+                <!--Integrate with Azure Synapse-->
+                <div id="as-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/DM08QWQ.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Azure Synapse Link</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">The native integration between Dataverse and Azure Synapse empowers organizations to extract deeper insights and drive informed decisions from their data. This seamless integration harnesses the robust analytical capabilities of Azure Synapse, a powerful analytics service, to efficiently process and analyze vast datasets stored in Dataverse.</p>
+                        <p class="info-txt">By leveraging Azure Synapse's advanced analytics, machine learning, and data warehousing capabilities, users gain the ability to perform complex analytics, predictive modeling, and run high-performance queries directly on the data residing in Dataverse. This direct access and integration enable businesses to derive actionable insights, uncover hidden patterns, and perform sophisticated analyses, enhancing decision-making processes.</p>
+                        <p class="info-txt">The integration allows for the creation of comprehensive data pipelines, enabling the transformation and movement of data between Dataverse and Azure Synapse seamlessly. This collaborative environment streamlines data management, ensures data consistency, and provides a unified platform for both transactional and analytical workloads, fostering a more holistic approach to data-driven strategies within organizations. Ultimately, this synergy between Dataverse and Azure Synapse empowers businesses to unlock the full potential of their data, driving innovation, optimizing operations, and gaining a competitive edge in today's data-driven landscape.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -513,7 +526,7 @@
                         </div>
     
                         <!--Integration with Azure Synapse-->
-                        <div class="topic">
+                        <div id="as" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/DM08QWQ.png">
@@ -741,6 +754,10 @@
                         else if (TileID == "df")
                         {
                             $("#df-info").css("display", "");
+                        }
+                        else if (TileID == "as")
+                        {
+                            $("#as-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
