@@ -500,6 +500,19 @@
                         <p class="info-txt"><b>Power Platform Pipelines</b>, built on Dataverse, provide a visual and automated way to orchestrate deployment and release processes. By leveraging Pipelines, organizations can define and automate complex release workflows, ensuring seamless and controlled movement of solutions and data across environments. This automation minimizes errors, accelerates deployment cycles, and maintains consistency throughout the ALM journey.</p>
                     </div>
                 </div>
+
+                <!--Accessibility-->
+                <div id="accessibility-info" class="info-pane">
+                    <div class="img-header">
+                        <img src=https://i.imgur.com/ciqflmC.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Build for Everyone</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse's model-driven capabilities are inherently designed to champion accessibility, aligning seamlessly with the latest standards such as the <b>Web Content Accessibility Guidelines (WCAG)</b>, <b>Section 508</b>, <b>ADA</b>, and more. Crafted by Microsoft, these features prioritize inclusivity from the ground up, ensuring that applications built on Dataverse are inherently accessible to users of diverse abilities.</p>
+                        <p class="info-txt">Adhering to global accessibility standards, Dataverse's model-driven approach guarantees a user-frindly, accessible experience for all individuals. Its interface, controls, and functionalities are thoughtfully crafted to accommodate assistive technologies, enabling users with disabilities to navigate, interact, and derive value from applications with ease.</p>
+                        <p class="info-txt">Microsoft's commitment to accessibility ensures that Dataverse's model-driven capabilities undergo rigorous testing and compliance checks, fostering an inclusive environment where accessibility isn't an afterthought but an integral part of the platform's DNA. By meeting these stringent accessibility standards, Dataverse empowers organizations to build applications that cater to a broader audience, fostering equal access and participation for all users.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -771,7 +784,7 @@
                         </div>
 
                         <!--Accessibility-->
-                        <div class="topic">
+                        <div id="accessibility" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/ciqflmC.png">
@@ -913,6 +926,10 @@
                         else if (TileID == "alm")
                         {
                             $("#alm-info").css("display", "");
+                        }
+                        else if (TileID == "accessibility")
+                        {
+                            $("#accessibility-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
