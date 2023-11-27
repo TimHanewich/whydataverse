@@ -342,6 +342,20 @@
                         <p class="info-txt">The ability to align to business processes within Dataverse offers a visual representation of workflows, enabling stakeholders to track progress, identify bottlenecks, and ensure adherence to best practices. This feature not only enhances operational efficiency but also fosters transparency, agility, and consistency in executing diverse business processes.</p>
                     </div>
                 </div>
+
+                <!--Integrate with Power Platform-->
+                <div id="pp-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="./assets/pp.svg" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">The Power Platform's Native Data Store</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">If you're using Power Platform tools like Power Apps, Power Automate, Power Pages, etc., Dataverse is <b>the best</b> data store to use.</p>
+                        <p class="info-txt">Dataverse serves as the ultimate data hub seamlessly integrating with the suite of Power Platform tools—Power Apps, Power Automate, Power Pages, Power BI, and more—creating a dynamic ecosystem for data management, automation, and analysis. Its versatility and sturdy architecture make it the prime choice for unlocking the full potential of Power Platform tools.</p>
+                        <p class="info-txt">With Power Apps, Dataverse's data repository becomes easily accessible, empowering users to swiftly craft custom applications without compromising data integrity. Likewise, Power Automate seamlessly connects to Dataverse, enabling automated workflows triggered by data changes or specific events, streamlining processes and boosting productivity.</p>
+                        <p class="info-txt">The direct integration of Dataverse with Power BI allows for real-time data analysis, fostering informed decision-making through compelling visualizations and reports. This unified hub ensures consistency, security, and reliability across the Power Platform, unleashing the power of data to drive innovation and efficiency throughout an organization's operations.</p>
+                    </div>
+                </div>
         
                 
                 
@@ -468,7 +482,7 @@
                     <div class="topics">
 
                         <!--Power Platform-->
-                        <div class="topic">
+                        <div id="pp" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="./assets/pp.svg">
@@ -708,6 +722,10 @@
                         else if (TileID == "bpf")
                         {
                             $("#bpf-info").css("display", "");
+                        }
+                        else if (TileID == "pp")
+                        {
+                            $("#pp-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
