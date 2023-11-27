@@ -394,6 +394,20 @@
                         <p class="info-txt">The integration enables the automation of repetitive tasks and the augmentation of decision-making processes. AI models can automate workflows, streamline operations, and even assist in the identification of anomalies or opportunities within the data, enhancing overall efficiency and enabling proactive strategies.</p>
                     </div>
                 </div>
+
+                <!--Entra ID-->
+                <div id="eid-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/ZlINaY9.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Build People-Centric Applications with Azure Entra ID</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse natively integrates with Azure Entra ID out of the box, empowering businesses to create people-centric applications that harness the wealth of rich data stored in their Entra ID instances. This integration opens up a world of possibilities by allowing organizations to leverage user-centric information such as profiles, roles, permissions, and group memberships within the applications built on Dataverse.</p>
+                        <p class="info-txt">By tapping into Entra ID's robust identity management capabilities, businesses can develop applications that are inherently people-driven, tailoring user experiences based on roles, access rights, and personalized preferences. This facilitates the creation of dynamic and adaptive applications that cater specifically to individual users or groups, enhancing user engagement and productivity.</p>
+                        <p class="info-txt">The integration enables seamless authentication and access control, ensuring secure and compliant usage of applications built on Dataverse. It facilitates single sign-on (SSO) experiences, simplifying user access across different applications while maintaining security standards and governance protocols defined within Entra ID.</p>
+                        <p class="info-txt">This integration of Dataverse with Entra ID unlocks the potential to build sophisticated, user-centric applications that utilize the rich data stored in Entra ID, fostering enhanced user experiences, stronger security measures, and more efficient workflows within organizations.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -559,7 +573,7 @@
                         </div>
                     
                         <!--Entra ID-->
-                        <div class="topic">
+                        <div id="eid" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/ZlINaY9.png">
@@ -775,6 +789,10 @@
                         else if (TileID == "ai")
                         {
                             $("#ai-info").css("display", "");
+                        }
+                        else if (TileID == "eid")
+                        {
+                            $("#eid-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
