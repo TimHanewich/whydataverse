@@ -827,6 +827,11 @@
 
         <script>
 
+            function fadeIn(div_id)
+            {
+                $("#" + div_id).fadeIn(1000);
+            }
+
             $(document).ready(function() 
             {
 
@@ -852,104 +857,25 @@
                 {
                     $(this).click(function()
                     {
-                        var TileID = $(this).attr("id"); //We can get the ID and handle which pane to show based on that.
-                        
+
                         //Hide all
                         $(".info-pane").css("display", "none");
 
-                        //Show the correct one based on the ID
-                        if (TileID == "rbsm")
+                        //Get the ID of what was clicked on and what the ID of the corresponding Info pane should be
+                        var clickedControlId = $(this).attr("id");
+                        var TileInfoID = clickedControlId + "-info"; //the naming convention I used is every info pane that corresponds to a topic tile has "-info" appended to the end.
+
+                        //If there is a div with an ID that matches the TileInfoID, fade in. If not, just fade in the intro pane.
+                        if ($("#" + TileInfoID).length)
                         {
-                            $("#rbsm-info").css("display", "");
+                            fadeIn(TileInfoID);
                         }
-                        else if (TileID == "gc")
+                        else
                         {
-                            $("#gc-info").css("display", "");
+                            fadeIn("why-dataverse-intro");
                         }
-                        else if (TileID == "beid")
-                        {
-                            $("#beid-info").css("display", "");
-                        }
-                        else if (TileID == "rtd")
-                        {
-                            $("#rtd-info").css("display", "");
-                        }
-                        else if (TileID == "ud")
-                        {
-                            $("#ud-info").css("display", "");
-                        }
-                        else if (TileID == "rm")
-                        {
-                            $("#rm-info").css("display", "");
-                        }
-                        else if (TileID == "cdm")
-                        {
-                            $("#cdm-info").css("display", "");
-                        }
-                        else if (TileID == "br")
-                        {
-                            $("#br-info").css("display", "");
-                        }
-                        else if (TileID == "bpf")
-                        {
-                            $("#bpf-info").css("display", "");
-                        }
-                        else if (TileID == "pp")
-                        {
-                            $("#pp-info").css("display", "");
-                        }
-                        else if (TileID == "df")
-                        {
-                            $("#df-info").css("display", "");
-                        }
-                        else if (TileID == "as")
-                        {
-                            $("#as-info").css("display", "");
-                        }
-                        else if (TileID == "ai")
-                        {
-                            $("#ai-info").css("display", "");
-                        }
-                        else if (TileID == "eid")
-                        {
-                            $("#eid-info").css("display", "");
-                        }
-                        else if (TileID == "perf")
-                        {
-                            $("#perf-info").css("display", "");
-                        }
-                        else if (TileID == "scale")
-                        {
-                            $("#scale-info").css("display", "");
-                        }
-                        else if (TileID == "audit")
-                        {
-                            $("#audit-info").css("display", "");
-                        }
-                        else if (TileID == "api")
-                        {
-                            $("#api-info").css("display", "");
-                        }
-                        else if (TileID == "transparency")
-                        {
-                            $("#transparency-info").css("display", "");
-                        }
-                        else if (TileID == "gov")
-                        {
-                            $("#gov-info").css("display", "");
-                        }
-                        else if (TileID == "alm")
-                        {
-                            $("#alm-info").css("display", "");
-                        }
-                        else if (TileID == "accessibility")
-                        {
-                            $("#accessibility-info").css("display", "");
-                        }
-                        else //If we haven't handled this specific topic yet, just show the welcome intro.
-                        {
-                            $("#why-dataverse-intro").css("display", ""); //Show Why Dataverse intro
-                        }
+
+                        
                     });
                 });
 
