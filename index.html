@@ -328,6 +328,20 @@
                         <p class="info-txt">By integrating these business rules directly into Dataverse, organizations can maintain data consistency, enforce regulatory compliance, and automate decision-making processes, ultimately enhancing operational efficiency and ensuring data reliability across various business domains.</p>
                     </div>
                 </div>
+
+                <!--Business Process Flows-->
+                <div id="bpf-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/VdjhCr6.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Align to Business Processes</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">In Dataverse, the feature of aligning to business processes through business process flows is a pivotal asset, empowering organizations to streamline, visualize, and execute their unique workflows with precision. These process flows serve as intuitive, step-by-step guides that reflect the specific sequences and actions essential to executing various business processes.</p>
+                        <p class="info-txt">For example, in a customer relationship management scenario, a business process flow within Dataverse can guide sales teams through the stages of lead qualification, opportunity management, and deal closure. Each stage can prompt specific actions, such as requesting additional information from a potential client or assigning tasks to team members, ensuring a standardized approach to managing sales pipelines.</p>
+                        <p class="info-txt">Similarly, in a project management context, business process flows can orchestrate tasks from project initiation to completion. This could involve steps like project planning, task assignment, review processes, and final delivery, guaranteeing adherence to established protocols and promoting consistency across different projects.</p>
+                        <p class="info-txt">The ability to align to business processes within Dataverse offers a visual representation of workflows, enabling stakeholders to track progress, identify bottlenecks, and ensure adherence to best practices. This feature not only enhances operational efficiency but also fosters transparency, agility, and consistency in executing diverse business processes.</p>
+                    </div>
+                </div>
         
                 
                 
@@ -432,7 +446,7 @@
                         </div>
 
                         <!--Business process flows-->
-                        <div class="topic">
+                        <div id="bpf" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/VdjhCr6.png">
@@ -690,6 +704,10 @@
                         else if (TileID == "br")
                         {
                             $("#br-info").css("display", "");
+                        }
+                        else if (TileID == "bpf")
+                        {
+                            $("#bpf-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
