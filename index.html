@@ -474,6 +474,19 @@
                         <p class="info-txt">Dataverse provides administrators with the ability to discern usage patterns by device types, providing crucial information about the preferred endpoints accessing the data. This level of visibility allows for strategic planning, ensuring the environment aligns with user preferences and operational requirements.</p>
                     </div>
                 </div>
+
+                <!--Governance-->
+                <div id="gov-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/clP8rDm.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Easily Implement Governance</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse's governance capabilities extend into controlling solution development within Power Apps and Power Automate by leveraging its robust security roles. These capabilities empower organizations to enforce fine-grained controls over who can create, modify, or access solutions within the Power Platform ecosystem.</p>
+                        <p class="info-txt">By integrating Dataverse security roles into solution development, administrators can precisely define permissions and access levels for individuals or groups involved in app or workflow creation. This ensures that only authorized users with the requisite privileges can design or manipulate solutions, maintaining data integrity and security throughout the development lifecycle.</p>
+                        <p class="info-txt">Dataverse's governance advantages in solution development enable organizations to establish role-based policies that align with their data governance frameworks. Administrators can dictate which entities, fields, or records a user or team can access or modify within their solutions, ensuring compliance and adherence to established data governance protocols.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -725,7 +738,7 @@
                         </div>
 
                         <!--Governance-->
-                        <div class="topic">
+                        <div id="gov" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/clP8rDm.png">
@@ -879,6 +892,10 @@
                         else if (TileID == "transparency")
                         {
                             $("#transparency-info").css("display", "");
+                        }
+                        else if (TileID == "gov")
+                        {
+                            $("#gov-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
