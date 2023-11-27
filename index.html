@@ -421,6 +421,19 @@
                         <p class="info-txt">The inherent performance capabilities of Dataverse ensure consistent and reliable operations, facilitating smoother workflows, faster data access, and responsive applications. This reliability contributes to improved productivity, reduced downtime, and a more agile operational environment, enabling organizations to stay focused on delivering value to their customers and stakeholders.</p>
                     </div>
                 </div>
+
+                <!--Scalability-->
+                <div id="scale-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/8LOXBvD.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Built for Scalability</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse is designed to cater to diverse scaling needs, accommodating projects ranging from small team-based endeavors to mission-critical applications deployed across entire organizations. Its inherent scalability offers a flexible infrastructure capable of adapting seamlessly to varying demands, whether it's a small-scale project requiring streamlined collaboration or an enterprise-level application necessitating robust data management and reliability.</p>
+                        <p class="info-txt">Regardless of the project scope, Dataverse's architecture empowers users to scale resources and functionalities effortlessly, ensuring that applications evolve alongside business growth. Its adaptability allows teams to expand datasets, functionalities, and user bases without compromising performance or stability.</p>
+                        <p class="info-txt">The trust bestowed upon Dataverse by global giants like Coca-Cola and Schlumberger underscores its enterprise-grade capabilities. These industry leaders rely on Dataverse's robustness, security, and scalability to drive innovation, streamline operations, and meet the complex needs of their vast organizations.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -619,7 +632,7 @@
                         </div>
 
                         <!--Scalability-->
-                        <div class="topic">
+                        <div id="scale" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/8LOXBvD.png">
@@ -810,6 +823,10 @@
                         else if (TileID == "perf")
                         {
                             $("#perf-info").css("display", "");
+                        }
+                        else if (TileID == "scale")
+                        {
+                            $("#scale-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
