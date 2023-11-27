@@ -434,6 +434,19 @@
                         <p class="info-txt">The trust bestowed upon Dataverse by global giants like Coca-Cola and Schlumberger underscores its enterprise-grade capabilities. These industry leaders rely on Dataverse's robustness, security, and scalability to drive innovation, streamline operations, and meet the complex needs of their vast organizations.</p>
                     </div>
                 </div>
+
+                <!--Auditing-->
+                <div id="audit-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/JKQwNhP.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Out-of-the-box Audit Capabilities</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse redefines data governance with its robust out-of-the-box auditing capabilities, offering unparalleled transparency and control over data activities. This feature empowers organizations to effortlessly track and monitor every change, access, or modification made to their data within the platform.</p>
+                        <p class="info-txt">The auditing functionality in Dataverse provides comprehensive logs and records, detailing who accessed the data, what changes were made, and when these modifications occurred. This level of granular insight into data operations not only ensures compliance with regulatory standards but also fosters a secure and accountable data environment.</p>
+                        <p class="info-txt">From tracking user interactions to documenting data modifications, Dataverse's auditing capabilities enable organizations to maintain a clear audit trail, mitigate risks, and swiftly address any discrepancies or security concerns. This level of transparency instills confidence in data governance practices and facilitates proactive decision-making across the organization.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -642,7 +655,7 @@
                         </div>
     
                         <!--Auditing-->
-                        <div class="topic">
+                        <div id="audit" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/JKQwNhP.png">
@@ -827,6 +840,10 @@
                         else if (TileID == "scale")
                         {
                             $("#scale-info").css("display", "");
+                        }
+                        else if (TileID == "audit")
+                        {
+                            $("#audit-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
