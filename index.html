@@ -408,6 +408,19 @@
                         <p class="info-txt">This integration of Dataverse with Entra ID unlocks the potential to build sophisticated, user-centric applications that utilize the rich data stored in Entra ID, fostering enhanced user experiences, stronger security measures, and more efficient workflows within organizations.</p>
                     </div>
                 </div>
+
+                <!--Performance-->
+                <div id="perf-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/L9o0T65.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Built for Performance</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">Dataverse liberates organizations from the intricate complexities of query optimization and performance tuning. Its architecture is finely tuned to handle vast volumes of data efficiently, ensuring swift and seamless operations without the need for exhaustive manual optimizations.</p>
+                        <p class="info-txt">By relieving businesses from the burdens of query tuning and performance optimization, Dataverse empowers teams to focus their energy and resources on strategic initiatives, innovation, and deriving actionable insights from their data. This means teams can redirect efforts towards enhancing applications, fostering innovation, and refining business processes rather than grappling with fine-tuning queries or database performance.</p>
+                        <p class="info-txt">The inherent performance capabilities of Dataverse ensure consistent and reliable operations, facilitating smoother workflows, faster data access, and responsive applications. This reliability contributes to improved productivity, reduced downtime, and a more agile operational environment, enabling organizations to stay focused on delivering value to their customers and stakeholders.</p>
+                    </div>
+                </div>
                 
                 
             </div>
@@ -596,7 +609,7 @@
                     <div class="topics">
 
                         <!--Performance-->
-                        <div class="topic">
+                        <div id="perf" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/L9o0T65.png">
@@ -793,6 +806,10 @@
                         else if (TileID == "eid")
                         {
                             $("#eid-info").css("display", "");
+                        }
+                        else if (TileID == "perf")
+                        {
+                            $("#perf-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
