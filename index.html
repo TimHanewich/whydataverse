@@ -302,6 +302,18 @@
                         <p class="info-txt">The comprehensive metadata framework extends beyond standard fields, enabling the creation of custom attributes and defining table structures and hierarchies. This flexibility empowers tailored data categorization, fostering efficient data modeling and analysis aligned with specific business needs. Dataverse's rich metadata not only facilitates meticulous data governance but also enhances data visibility, classification, and relational structures, making it an ideal enterprise database for diverse business workloads.</p>
                     </div>
                 </div>
+
+                <!--Common Data model-->
+                <div id="cdm-info" class="info-pane">
+                    <div class="img-header">
+                        <img src="https://i.imgur.com/AXP4Jf5.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <h2 class="info-pane-title">Common Data Model</h2>
+                    <div class="info-txt-container">
+                        <p class="info-txt">The common data model in Dataverse stands as a foundational pillar revolutionizing data management and interoperability. Offering a standardized framework, it streamlines data integration across diverse applications and systems, fostering seamless collaboration and efficiency. By providing a universal language for data representation, it ensures consistency, simplifies data sharing, and accelerates development cycles.</p>
+                        <p class="info-txt">The advantages are: enhanced data quality, reduced complexities in integration efforts, increased agility in adapting to evolving business needs, and empowering organizations to derive meaningful insights from their data with ease. The common data model within Dataverse not only unlocks the potential for innovation but also establishes a robust foundation for scalable, future-proof data ecosystems.</p>
+                    </div>
+                </div>
         
                 
                 
@@ -386,7 +398,7 @@
                         </div>
                     
                         <!--Common Data Model-->
-                        <div class="topic">
+                        <div id="cdm" class="topic">
                             <div class="topic-cover">
                                 <div class="icon-container">
                                     <img src="https://i.imgur.com/AXP4Jf5.png">
@@ -656,6 +668,10 @@
                         else if (TileID == "rm")
                         {
                             $("#rm-info").css("display", "");
+                        }
+                        else if (TileID == "cdm")
+                        {
+                            $("#cdm-info").css("display", "");
                         }
                         else //If we haven't handled this specific topic yet, just show the welcome intro.
                         {
