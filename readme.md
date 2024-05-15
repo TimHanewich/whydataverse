@@ -1,5 +1,5 @@
 # Why Dataverse?
-Access the "Why Dataverse?" site at [aka.ms/WhyDataverse](https://aka.ms/WhyDataverse)!
+Access the *Why Dataverse?* site at [aka.ms/WhyDataverse](https://aka.ms/WhyDataverse)!
 
 This site was designed to provide education on the various capabilities of Microsoft Dataverse. 
 
